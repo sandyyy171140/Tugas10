@@ -1,0 +1,69 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  background-color: #0a0e17;
+  color: #e0e0e0;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121a2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3a50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4a60;
+}
+
+/* Router Link Transitions */
+.router-link-active {
+  transition: all 0.3s ease;
+}
+
+/* Animation for price changes */
+@keyframes pulseGreen {
+  0% { background-color: rgba(76, 175, 80, 0.1); }
+  50% { background-color: rgba(76, 175, 80, 0.3); }
+  100% { background-color: rgba(76, 175, 80, 0.1); }
+}
+
+@keyframes pulseRed {
+  0% { background-color: rgba(244, 67, 54, 0.1); }
+  50% { background-color: rgba(244, 67, 54, 0.3); }
+  100% { background-color: rgba(244, 67, 54, 0.1); }
+}
+
+.price-up {
+  animation: pulseGreen 1s ease;
+}
+
+.price-down {
+  animation: pulseRed 1s ease;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
